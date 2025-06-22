@@ -33,8 +33,7 @@ This guide explains how to create a free AWS account, configure Rekognition, ins
 3. Username: `rekognition-user`
 4. Enable **Programmatic access**
 5. Attach policy: `AmazonRekognitionFullAccess`
-6. (Optional) Attach `AmazonS3FullAccess` if using S3
-7. Create user and save **Access Key ID** and **Secret Access Key**
+6. Create user and save **Access Key ID** and **Secret Access Key**
 
 ---
 
@@ -98,20 +97,3 @@ dotnet --version
 - Ensure AWS credentials are available for Rekognition calls.
 - Use dependency injection for Rekognition clients and SQL DBContext.
 
----
-
-## 🧪 Test Everything
-
-- Run your .NET backend:
-  ```bash
-  dotnet run
-  ```
-- Test Rekognition endpoints (e.g., face detection).
-- Verify DB connectivity.
-
----
-
-## 📝 Tips
-
-- Use `appsettings.json` to manage your AWS keys securely via environment variables or user secrets.
-- Always restrict IAM permissions for production use.
