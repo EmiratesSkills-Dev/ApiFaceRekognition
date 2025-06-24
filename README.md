@@ -79,6 +79,11 @@ Default output format: json
 dotnet --version
 ```
 
+5- Install Dotnet tool
+```bash
+dotnet tool install --global dotnet-ef
+```
+
 ---
 
 ## ✅ 7. Install SQL Server
@@ -90,8 +95,12 @@ dotnet --version
    [https://aka.ms/ssmsfullsetup](https://aka.ms/ssmsfullsetup)
 
 ---
+## ✅ 8. Run the migrations
+dotnet ef database update
 
-## ✅ 8. Set Up Your Project
+
+
+## ✅ 9. Set Up Your Project
 
 - Ensure your `.NET 8` backend uses the correct connection string for SQL Server.
 - Ensure AWS credentials are available for Rekognition calls.
